@@ -37,7 +37,7 @@
                         </a>
                     </li>
                     <li class="menu-item lb">
-                        <a href="#about-me2">
+                        <a href="#curriculum-vitae">
                             <i class="icon fas fa-list-alt"></i>
                             <span>Lý lịch</span>
                         </a>
@@ -194,10 +194,10 @@
                     </div>
                 </div>
             </div>
-            <div id="about-me2" class="section-tab">
+            <div id="curriculum-vitae" class="section-tab">
                 <div class="wrapper">
                     <div class="content about-me__info mb-5">
-                        <div class="title"><span>Về</span> tôi 2</div>
+                        <div class="title"><span>Lí</span> lịch trích ngang</div>
                         <div class="body row lt lmv">
                             <div class="col-md-6 greeting">
                                 Xin chào, tôi là Nguyễn Hà Hoàng Anh, một kỹ sư phần mềm và chuyên viên quản trị hệ thống mạng. Với 5 năm kinh nghiệm lập trình và quản trị nhiều hệ thống khác nhau, tôi cũng là một người yêu thích các công nghệ mới, làm quen nhanh với các môi trường
@@ -448,6 +448,13 @@
         <script src="vendor/font-awesome/all.js"></script>
         <script src="vendor/OwlCarousel/owl.carousel.js"></script>
         <script type="text/javascript">
+            $('.menu-item').each(function(index, menuItem) {
+                if (menuItem.hasClass("active")) {
+                    menuItem.removeClass('animate__animated animate__fadeOutLeft');
+                    menuItem.addClass('animate__animated animate__fadeInLeft show');
+                }
+            })
+
             var menuItems = $('.menu-item');
 
             menuItems.click(function(Event) {
