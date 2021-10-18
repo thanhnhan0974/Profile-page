@@ -446,7 +446,6 @@ a:hover {
 /* RESUME */
 
 .section-tab__resume .resume--title {
-    position: relative;
     padding: 20px 0;
     font-size: 17px;
 }
@@ -461,8 +460,6 @@ a:hover {
     font-weight: 600;
     text-transform: uppercase;
 }
-
-.section-tab__resume .resume--content {}
 
 .section-tab__resume .resume--content .resume--content-item {
     position: relative;
@@ -489,19 +486,74 @@ a:hover {
     font-size: 17px;
 }
 
-.section-tab__resume .resume--content .resume--content-item .address {
+.section-tab__resume .resume--content .resume--content-item .company {
     opacity: 0.6;
     font-size: 14px;
     line-height: 14px;
     margin-bottom: 10px;
 }
 
-.section-tab__resume .resume--content .resume--content-item .list {}
-
 .section-tab__resume .resume--content .resume--content-item ul.list li {
     opacity: 0.8;
     font-size: 16px;
     line-height: 27px;
+}
+
+
+/* contact */
+
+.section-tab__contact .body ul li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    padding: 0 10px 10px;
+    font-size: 14px;
+}
+
+.section-tab__contact .body ul li span {
+    padding: 1px 10px;
+    background: var(--orange);
+    border-radius: 3px;
+    color: #fff;
+}
+
+.section-tab__contact .form-message .form-input .form-control {
+    outline: 0;
+    border-radius: 0;
+}
+
+.section-tab__contact .form-message .form-input .form-control:focus {
+    border-color: var(--orange);
+    border-width: 2px;
+}
+
+.form-control:focus,
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.section-tab__contact .form-message .form-input textarea.form-control {
+    resize: none;
+    height: 100px;
+}
+
+.section-tab__contact .form-message .form-input button {
+    padding: 10px 20px;
+    background-color: #eee;
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .1s;
+}
+
+.section-tab__contact .form-message .form-input button:hover {
+    color: var(--orange)
+}
+
+.section-tab__contact .form-message .form-input button .fa-paper-plane {
+    margin-left: 5px;
 }
 
 
@@ -513,6 +565,16 @@ a:hover {
     height: 1px;
     position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.title::after {
+    content: '';
+    background: linear-gradient(to right, rgb(0 0 0 / 18%), transparent);
+    height: 1px;
+    position: absolute;
+    bottom: 0;
     left: 0;
     width: 100%;
 }
