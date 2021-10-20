@@ -1,0 +1,533 @@
+.dots-percentage {
+  padding: 0 !important;
+  position: relative;
+}
+
+.dots-percentage span.dot {
+  display: flex;
+  justify-content: space-between;
+}
+.dots-percentage span.dot span {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #ff9800;
+  z-index: 11;
+}
+
+.dots-percentage ~ span.dg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.dots-percentage ~ span.dg span {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #d8dbe2;
+  z-index: 10;
+}
+
+.dots-percentage.p-1 .da {
+  overflow: hidden;
+  width: 1%;
+}
+
+.dots-percentage.p-2 .da {
+  overflow: hidden;
+  width: 2%;
+}
+
+.dots-percentage.p-3 .da {
+  overflow: hidden;
+  width: 3%;
+}
+
+.dots-percentage.p-4 .da {
+  overflow: hidden;
+  width: 4%;
+}
+
+.dots-percentage.p-5 .da {
+  overflow: hidden;
+  width: 5%;
+}
+
+.dots-percentage.p-6 .da {
+  overflow: hidden;
+  width: 6%;
+}
+
+.dots-percentage.p-7 .da {
+  overflow: hidden;
+  width: 7%;
+}
+
+.dots-percentage.p-8 .da {
+  overflow: hidden;
+  width: 8%;
+}
+
+.dots-percentage.p-9 .da {
+  overflow: hidden;
+  width: 9%;
+}
+
+.dots-percentage.p-10 .da {
+  overflow: hidden;
+  width: 10%;
+}
+
+.dots-percentage.p-11 .da {
+  overflow: hidden;
+  width: 11%;
+}
+
+.dots-percentage.p-12 .da {
+  overflow: hidden;
+  width: 12%;
+}
+
+.dots-percentage.p-13 .da {
+  overflow: hidden;
+  width: 13%;
+}
+
+.dots-percentage.p-14 .da {
+  overflow: hidden;
+  width: 14%;
+}
+
+.dots-percentage.p-15 .da {
+  overflow: hidden;
+  width: 15%;
+}
+
+.dots-percentage.p-16 .da {
+  overflow: hidden;
+  width: 16%;
+}
+
+.dots-percentage.p-17 .da {
+  overflow: hidden;
+  width: 17%;
+}
+
+.dots-percentage.p-18 .da {
+  overflow: hidden;
+  width: 18%;
+}
+
+.dots-percentage.p-19 .da {
+  overflow: hidden;
+  width: 19%;
+}
+
+.dots-percentage.p-20 .da {
+  overflow: hidden;
+  width: 20%;
+}
+
+.dots-percentage.p-21 .da {
+  overflow: hidden;
+  width: 21%;
+}
+
+.dots-percentage.p-22 .da {
+  overflow: hidden;
+  width: 22%;
+}
+
+.dots-percentage.p-23 .da {
+  overflow: hidden;
+  width: 23%;
+}
+
+.dots-percentage.p-24 .da {
+  overflow: hidden;
+  width: 24%;
+}
+
+.dots-percentage.p-25 .da {
+  overflow: hidden;
+  width: 25%;
+}
+
+.dots-percentage.p-26 .da {
+  overflow: hidden;
+  width: 26%;
+}
+
+.dots-percentage.p-27 .da {
+  overflow: hidden;
+  width: 27%;
+}
+
+.dots-percentage.p-28 .da {
+  overflow: hidden;
+  width: 28%;
+}
+
+.dots-percentage.p-29 .da {
+  overflow: hidden;
+  width: 29%;
+}
+
+.dots-percentage.p-30 .da {
+  overflow: hidden;
+  width: 30%;
+}
+
+.dots-percentage.p-31 .da {
+  overflow: hidden;
+  width: 31%;
+}
+
+.dots-percentage.p-32 .da {
+  overflow: hidden;
+  width: 32%;
+}
+
+.dots-percentage.p-33 .da {
+  overflow: hidden;
+  width: 33%;
+}
+
+.dots-percentage.p-34 .da {
+  overflow: hidden;
+  width: 34%;
+}
+
+.dots-percentage.p-35 .da {
+  overflow: hidden;
+  width: 35%;
+}
+
+.dots-percentage.p-36 .da {
+  overflow: hidden;
+  width: 36%;
+}
+
+.dots-percentage.p-37 .da {
+  overflow: hidden;
+  width: 37%;
+}
+
+.dots-percentage.p-38 .da {
+  overflow: hidden;
+  width: 38%;
+}
+
+.dots-percentage.p-39 .da {
+  overflow: hidden;
+  width: 39%;
+}
+
+.dots-percentage.p-40 .da {
+  overflow: hidden;
+  width: 40%;
+}
+
+.dots-percentage.p-41 .da {
+  overflow: hidden;
+  width: 41%;
+}
+
+.dots-percentage.p-42 .da {
+  overflow: hidden;
+  width: 42%;
+}
+
+.dots-percentage.p-43 .da {
+  overflow: hidden;
+  width: 43%;
+}
+
+.dots-percentage.p-44 .da {
+  overflow: hidden;
+  width: 44%;
+}
+
+.dots-percentage.p-45 .da {
+  overflow: hidden;
+  width: 45%;
+}
+
+.dots-percentage.p-46 .da {
+  overflow: hidden;
+  width: 46%;
+}
+
+.dots-percentage.p-47 .da {
+  overflow: hidden;
+  width: 47%;
+}
+
+.dots-percentage.p-48 .da {
+  overflow: hidden;
+  width: 48%;
+}
+
+.dots-percentage.p-49 .da {
+  overflow: hidden;
+  width: 49%;
+}
+
+.dots-percentage.p-50 .da {
+  overflow: hidden;
+  width: 50%;
+}
+
+.dots-percentage.p-51 .da {
+  overflow: hidden;
+  width: 51%;
+}
+
+.dots-percentage.p-52 .da {
+  overflow: hidden;
+  width: 52%;
+}
+
+.dots-percentage.p-53 .da {
+  overflow: hidden;
+  width: 53%;
+}
+
+.dots-percentage.p-54 .da {
+  overflow: hidden;
+  width: 54%;
+}
+
+.dots-percentage.p-55 .da {
+  overflow: hidden;
+  width: 55%;
+}
+
+.dots-percentage.p-56 .da {
+  overflow: hidden;
+  width: 56%;
+}
+
+.dots-percentage.p-57 .da {
+  overflow: hidden;
+  width: 57%;
+}
+
+.dots-percentage.p-58 .da {
+  overflow: hidden;
+  width: 58%;
+}
+
+.dots-percentage.p-59 .da {
+  overflow: hidden;
+  width: 59%;
+}
+
+.dots-percentage.p-60 .da {
+  overflow: hidden;
+  width: 60%;
+}
+
+.dots-percentage.p-61 .da {
+  overflow: hidden;
+  width: 61%;
+}
+
+.dots-percentage.p-62 .da {
+  overflow: hidden;
+  width: 62%;
+}
+
+.dots-percentage.p-63 .da {
+  overflow: hidden;
+  width: 63%;
+}
+
+.dots-percentage.p-64 .da {
+  overflow: hidden;
+  width: 64%;
+}
+
+.dots-percentage.p-65 .da {
+  overflow: hidden;
+  width: 65%;
+}
+
+.dots-percentage.p-66 .da {
+  overflow: hidden;
+  width: 66%;
+}
+
+.dots-percentage.p-67 .da {
+  overflow: hidden;
+  width: 67%;
+}
+
+.dots-percentage.p-68 .da {
+  overflow: hidden;
+  width: 68%;
+}
+
+.dots-percentage.p-69 .da {
+  overflow: hidden;
+  width: 69%;
+}
+
+.dots-percentage.p-70 .da {
+  overflow: hidden;
+  width: 70%;
+}
+
+.dots-percentage.p-71 .da {
+  overflow: hidden;
+  width: 71%;
+}
+
+.dots-percentage.p-72 .da {
+  overflow: hidden;
+  width: 72%;
+}
+
+.dots-percentage.p-73 .da {
+  overflow: hidden;
+  width: 73%;
+}
+
+.dots-percentage.p-74 .da {
+  overflow: hidden;
+  width: 74%;
+}
+
+.dots-percentage.p-75 .da {
+  overflow: hidden;
+  width: 75%;
+}
+
+.dots-percentage.p-76 .da {
+  overflow: hidden;
+  width: 76%;
+}
+
+.dots-percentage.p-77 .da {
+  overflow: hidden;
+  width: 77%;
+}
+
+.dots-percentage.p-78 .da {
+  overflow: hidden;
+  width: 78%;
+}
+
+.dots-percentage.p-79 .da {
+  overflow: hidden;
+  width: 79%;
+}
+
+.dots-percentage.p-80 .da {
+  overflow: hidden;
+  width: 80%;
+}
+
+.dots-percentage.p-81 .da {
+  overflow: hidden;
+  width: 81%;
+}
+
+.dots-percentage.p-82 .da {
+  overflow: hidden;
+  width: 82%;
+}
+
+.dots-percentage.p-83 .da {
+  overflow: hidden;
+  width: 83%;
+}
+
+.dots-percentage.p-84 .da {
+  overflow: hidden;
+  width: 84%;
+}
+
+.dots-percentage.p-85 .da {
+  overflow: hidden;
+  width: 85%;
+}
+
+.dots-percentage.p-86 .da {
+  overflow: hidden;
+  width: 86%;
+}
+
+.dots-percentage.p-87 .da {
+  overflow: hidden;
+  width: 87%;
+}
+
+.dots-percentage.p-88 .da {
+  overflow: hidden;
+  width: 88%;
+}
+
+.dots-percentage.p-89 .da {
+  overflow: hidden;
+  width: 89%;
+}
+
+.dots-percentage.p-90 .da {
+  overflow: hidden;
+  width: 90%;
+}
+
+.dots-percentage.p-91 .da {
+  overflow: hidden;
+  width: 91%;
+}
+
+.dots-percentage.p-92 .da {
+  overflow: hidden;
+  width: 92%;
+}
+
+.dots-percentage.p-93 .da {
+  overflow: hidden;
+  width: 93%;
+}
+
+.dots-percentage.p-94 .da {
+  overflow: hidden;
+  width: 94%;
+}
+
+.dots-percentage.p-95 .da {
+  overflow: hidden;
+  width: 95%;
+}
+
+.dots-percentage.p-96 .da {
+  overflow: hidden;
+  width: 96%;
+}
+
+.dots-percentage.p-97 .da {
+  overflow: hidden;
+  width: 97%;
+}
+
+.dots-percentage.p-98 .da {
+  overflow: hidden;
+  width: 98%;
+}
+
+.dots-percentage.p-99 .da {
+  overflow: hidden;
+  width: 99%;
+}
+
+.dots-percentage.p-100 .da {
+  overflow: hidden;
+  width: 100%;
+}
+
+/*# sourceMappingURL=dots-percentage.css.map */

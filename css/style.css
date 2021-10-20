@@ -35,10 +35,9 @@ a {
 
 .main {
     position: relative;
-    left: 50%;
-    top: 130px;
-    transform: translate(-50%, -50%);
-    width: 1270px;
+    height: 90vh;
+    margin: 5vh auto;
+    max-width: 1265px;
 }
 
 .wrapper-page {
@@ -108,10 +107,13 @@ a {
 /*Menu*/
 
 .header {
-    z-index: 11;
-    position: absolute;
+    position: relative;
     left: 0;
+    z-index: 11;
     top: 15px;
+    width: 72px;
+    margin-right: 8px !important;
+    float: left;
 }
 
 .header .menu {
@@ -159,20 +161,21 @@ a:hover {
 /* Photo profile */
 
 .card-profile {
-    position: absolute;
-    left: 85px;
+    position: relative;
     top: 0;
-    width: 480px;
-    height: 675px;
+    width: 37.9446640316%;
+    height: 100%;
+    max-height: 675px;
     box-shadow: -15px -15px rgb(255 152 0 / 28%), 3px 3px 10px rgb(118 118 118 / 22%);
     z-index: 10;
     border-radius: 5px;
+    float: left;
 }
 
 .card-profile .main__card-body {
     position: relative;
     text-align: center;
-    height: calc(100% - 385px);
+    height: 40%;
     padding-top: 20px;
 }
 
@@ -191,7 +194,7 @@ a:hover {
 }
 
 .card-profile .card .card-img {
-    height: 385px;
+    height: 60%;
 }
 
 .card-profile .card .card-img .card-img__img {
@@ -264,8 +267,9 @@ a:hover {
     position: absolute;
     right: 0;
     top: 15px;
-    width: 710px;
-    height: 645px;
+    width: 56.1264822134%;
+    height: 95%;
+    max-height: 645px;
     overflow: auto;
     background: #fff;
     /* opacity: 0;
@@ -445,28 +449,28 @@ a:hover {
 
 /* RESUME */
 
-.section-tab__resume .resume--title {
+.resume .resume--title {
     padding: 20px 0;
     font-size: 17px;
 }
 
-.section-tab__resume .resume--title .icon {
+.resume .resume--title .icon {
     color: var(--orange);
     font-size: 1.4em;
     margin-right: 8px;
 }
 
-.section-tab__resume .resume--title span {
+.resume .resume--title span {
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.section-tab__resume .resume--content .resume--content-item {
+.resume .resume--content .resume--content-item {
     position: relative;
     padding: 35px 0;
 }
 
-.section-tab__resume .resume--content .resume--content-item .date {
+.resume .resume--content .resume--content-item .date {
     border: 1px solid #ccc;
     padding: 0 6px;
     border-radius: 5px;
@@ -476,27 +480,55 @@ a:hover {
     margin-bottom: 10px;
 }
 
-.section-tab__resume .resume--content .resume--content-item .date.active {
+.resume .resume--content .resume--content-item .date.active {
     color: var(--orange);
     border-color: var(--orange);
 }
 
-.section-tab__resume .resume--content .resume--content-item .name {
+.resume .resume--content .resume--content-item .name {
     font-weight: 600;
     font-size: 17px;
 }
 
-.section-tab__resume .resume--content .resume--content-item .company {
+.resume .resume--content .resume--content-item .company {
     opacity: 0.6;
     font-size: 14px;
     line-height: 14px;
     margin-bottom: 10px;
 }
 
-.section-tab__resume .resume--content .resume--content-item ul.list li {
+.resume .resume--content .resume--content-item ul.list li {
     opacity: 0.8;
     font-size: 16px;
     line-height: 27px;
+}
+
+.skills .skills-list .skill-title {
+    position: relative;
+    padding: 20px 0 23px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.skills .skills-list .skill-title .icon {
+    color: var(--orange);
+    margin-right: 5px;
+}
+
+.skills .skills-list ul li {
+    padding: 15px 0;
+    position: relative;
+}
+
+.skills .skills-list ul li .name {
+    opacity: 0.7;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.process {
+    position: relative;
 }
 
 
