@@ -36,7 +36,7 @@ a {
 .main {
     position: relative;
     height: 90vh;
-    margin: 5vh auto;
+    margin: 10vh auto;
     max-width: 1265px;
 }
 
@@ -302,10 +302,6 @@ a:hover {
     color: var(--orange);
 }
 
-.section-tab .wrapper .content .body {
-    position: relative;
-}
-
 .section-tab .wrapper .greeting {
     text-align: justify;
     padding: 25px;
@@ -503,10 +499,18 @@ a:hover {
     line-height: 27px;
 }
 
+.process {
+    position: relative;
+}
+
+.skills .skills-list {
+    padding: 15px 15px 25px;
+}
+
 .skills .skills-list .skill-title {
     position: relative;
     padding: 20px 0 23px;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -521,14 +525,46 @@ a:hover {
     position: relative;
 }
 
+.skills .skills-list.circle-percentage ul li {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.skills .skills-list.circle-percentage ul li .c100 {
+    margin: auto;
+}
+
+.skills .skills-list.circle-percentage ul li .name {
+    text-align: center;
+    margin: 15px 0 0;
+}
+
 .skills .skills-list ul li .name {
     opacity: 0.7;
     font-size: 15px;
     margin-bottom: 7px;
 }
 
-.process {
-    position: relative;
+.skills .skills-list.list ul {
+    padding: 20px 15px;
+}
+
+.skills .skills-list.list ul li {
+    padding: 5px 0;
+}
+
+.skills .skills-list.list ul li .name {
+    padding-left: 1.75rem;
+}
+
+.skills .skills-list.list ul li .name::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    font-weight: 900;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    color: var(--orange);
 }
 
 
@@ -591,22 +627,32 @@ a:hover {
 
 /* line */
 
-.lt:before {
-    content: '';
-    background: linear-gradient(to right, transparent, rgb(0 0 0 / 18%), transparent);
-    height: 1px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
 .title::after {
     content: '';
     background: linear-gradient(to right, rgb(0 0 0 / 18%), transparent);
     height: 1px;
     position: absolute;
     bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.lt,
+.lr,
+.lb,
+.ll,
+.lmb,
+.lmv,
+.lmh {
+    position: relative;
+}
+
+.lt:before {
+    content: '';
+    background: linear-gradient(to right, transparent, rgb(0 0 0 / 18%), transparent);
+    height: 1px;
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
 }
@@ -654,7 +700,7 @@ a:hover {
 
 .lmv:after {
     content: '';
-    background: linear-gradient(to right, transparent, rgb(0 0 0 / 18%), transparent);
+    background: linear-gradient(to bottom, rgb(0 0 0 / 18%), transparent);
     height: 100%;
     position: absolute;
     top: 0;
@@ -694,3 +740,25 @@ a:hover {
         transform: rotate(180deg);
     }
 }
+
+
+/* responsive */
+
+@media (max-width: 1199px) {
+    .wrapper-page {
+        height: 100%;
+    }
+    .main {
+        height: auto;
+        margin: auto;
+    }
+    .section-tab {
+        position: relative;
+        height: auto;
+        max-height: none;
+    }
+}
+
+@media (min-width: 561px) and (max-width: 1199px) {}
+
+@media (max-width: 560px) {}

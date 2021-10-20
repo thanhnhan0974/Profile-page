@@ -108,7 +108,7 @@
                                     Quản trị hệ thống
                                 </div>
                             </div>
-                            <div class="skill-content col-md-6 text-center position-relative lt">
+                            <div class="skill-content col-md-6 text-center lt">
                                 <div class="icon">
                                     <i class="fas fa-bullhorn"></i>
                                 </div>
@@ -116,7 +116,7 @@
                                     Quảng cáo Facebook
                                 </div>
                             </div>
-                            <div class="skill-content col-md-6 text-center position-relative lt">
+                            <div class="skill-content col-md-6 text-center lt">
                                 <div class="icon">
                                     <i class="fas fa-cloud"></i>
                                 </div>
@@ -157,7 +157,7 @@
                     </div>
                     <div class="content section-tab__about-me--quote">
                         <div class="title"><span>Vui</span> chút về tôi</div>
-                        <div class="body position-relative lt pt-5">
+                        <div class="body lt pt-5">
                             <div class="owl-carousel owl-theme">
                                 <div class="card">
                                     <p class="card-text">
@@ -275,8 +275,8 @@
                         <div class="title">
                             <span>Kỹ</span> năng
                         </div>
-                        <div class="body row lt lmv">
-                            <div class="skills-list col-md-6">
+                        <div class="body row lt">
+                            <div class="skills-list col-md-6 lr">
                                 <div class="skill-title lmb">
                                     <i class="icon fas fa-chalkboard"></i> Thiết kế
                                 </div>
@@ -321,6 +321,101 @@
                                         <div class="process">
                                             <div class="dots-percentage p-40">
                                             </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="skills-list col-md-6 circle-percentage lr">
+                                <div class="skill-title lmb">
+                                    <i class="icon fas fa-code"></i> Lập trình
+                                </div>
+                                <ul class="row">
+                                    <li class="col-6">
+                                        <div class="name">WordPress</div>
+                                        <div class="c100 p90 small">
+                                            <span>90%</span>
+                                            <div class="slice">
+                                                <div class="bar"></div>
+                                                <div class="fill"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-6">
+                                        <div class="name">PHP / MYSQL</div>
+                                        <div class="c100 p90 small">
+                                            <span>90%</span>
+                                            <div class="slice">
+                                                <div class="bar"></div>
+                                                <div class="fill"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-6">
+                                        <div class="name">C#</div>
+                                        <div class="c100 p70 small">
+                                            <span>70%</span>
+                                            <div class="slice">
+                                                <div class="bar"></div>
+                                                <div class="fill"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-6">
+                                        <div class="name">Jquery / Javascript</div>
+                                        <div class="c100 p60 small">
+                                            <span>60%</span>
+                                            <div class="slice">
+                                                <div class="bar"></div>
+                                                <div class="fill"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="skills-list col-md-6 list">
+                                <div class="skill-title lmb">
+                                    <i class="icon fas fa-list-alt"></i> Hiểu biết
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="name">
+                                            Hệ thống máy chủ Windows / Linux
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">
+                                            Thiết bị mạng Cisco / Juniper
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">
+                                            Sử dụng Photoshop căn bản
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">
+                                            Lập trình một số phần mềm nền tảng Web và .NET
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">
+                                            Xây dựng hệ thống mạng LAN / Wifi
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">
+                                            Tối ưu hóa website
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">
+                                            Sử dụng thành thạo các mã nguồn mở (Wordpress, Joomla, ...)
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">
+                                            Chạy quảng cáo Facebook hiệu quả
                                         </div>
                                     </li>
                                 </ul>
@@ -370,46 +465,40 @@
         <script src="vendor/font-awesome/all.js"></script>
         <script src="vendor/OwlCarousel/owl.carousel.js"></script>
         <script type="text/javascript">
-            $('.menu-item').each(function(index, menuItem) {
-                let _menuItem = $(menuItem);
-                let id = _menuItem.children('a').attr('href');
-                if (_menuItem.hasClass("active")) {
-                    $(id).addClass('animate__animated animate__fadeInLeft show');
-                } else {
-                    $(id).addClass('animate__animated animate__fadeOutLeft');
-                }
-            })
+            var widthWindow = $(window).width();
 
-            var menuItems = $('.menu-item');
+            if (widthWindow >= 1200) {
+                $('.menu-item').each(function(index, menuItem) {
+                    let _menuItem = $(menuItem);
+                    let id = _menuItem.children('a').attr('href');
+                    if (_menuItem.hasClass("active")) {
+                        $(id).addClass('animate__animated animate__fadeInLeft show');
+                    } else {
+                        $(id).addClass('animate__animated animate__fadeOutLeft');
+                    }
+                })
 
-            menuItems.click(function(Event) {
-                Event.preventDefault();
+                var menuItems = $('.menu-item');
 
-                let current = $(this);
-                let id = current.children('a').attr('href');
-                let menuItem = $(id);
+                menuItems.click(function(Event) {
+                    Event.preventDefault();
 
-                menuItems.removeClass("active");
-                current.addClass("active");
+                    let current = $(this);
+                    let id = current.children('a').attr('href');
+                    let menuItem = $(id);
 
-                $('.main').find('.section-tab').removeClass('animate__animated animate__fadeInLeft show');
-                $('.main').find('.section-tab').addClass('animate__animated animate__fadeOutLeft');
+                    menuItems.removeClass("active");
+                    current.addClass("active");
 
-                if (current.hasClass("active")) {
-                    menuItem.removeClass('animate__animated animate__fadeOutLeft');
-                    menuItem.addClass('animate__animated animate__fadeInLeft show');
-                }
-            });
+                    $('.main').find('.section-tab').removeClass('animate__animated animate__fadeInLeft show');
+                    $('.main').find('.section-tab').addClass('animate__animated animate__fadeOutLeft');
 
-            // carousel
-            $(document).ready(function() {
-                $('.owl-carousel').owlCarousel({
-                    margin: 50,
-                    items: 1,
-                    dots: true,
+                    if (current.hasClass("active")) {
+                        menuItem.removeClass('animate__animated animate__fadeOutLeft');
+                        menuItem.addClass('animate__animated animate__fadeInLeft show');
+                    }
                 });
-            });
-
+            }
             // check form data
 
             $("btn-submit").click(function(Event) {
@@ -420,9 +509,21 @@
                 return false;
             })
 
-            // create dots
-            $('.dots-percentage').append('<div class="da"><span class="dot"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></div>').after('<span class="dg"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>')
-            $('.dot').width($('.dots-percentage').width());
+            $(document).ready(function() {
+                // carousel
+                $('.owl-carousel').owlCarousel({
+                    margin: 50,
+                    items: 1,
+                    dots: true,
+                });
+                // create dots
+                $('.dots-percentage').append('<div class="da"><span class="dot"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></div>').after('<span class="dg"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>')
+                $(window).on('resize', function() {
+                    $('.dot').width($('.dots-percentage').width());
+                    var widthWindow = $(window).width();
+                })
+                $('.dot').width($('.dots-percentage').width());
+            });
         </script>
 
 </body>
