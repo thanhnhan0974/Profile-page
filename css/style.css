@@ -272,6 +272,7 @@ a:hover {
     max-height: 645px;
     overflow: auto;
     background: #fff;
+    transition: all 0.5s;
     /* opacity: 0;
     visibility: hidden; */
 }
@@ -759,7 +760,6 @@ a:hover {
         height: auto;
         margin: 15px auto 0;
         max-width: 700px;
-        padding: 0 80px;
     }
     .main .header {
         position: fixed;
@@ -781,6 +781,9 @@ a:hover {
 }
 
 @media (min-width: 561px) and (max-width: 1199px) {
+    .main {
+        padding: 0 40px 0 100px;
+    }
     .main .header {
         top: 15px;
         left: auto;
@@ -789,6 +792,9 @@ a:hover {
 }
 
 @media (max-width: 560px) {
+    .main {
+        max-width: 400px;
+    }
     .main .header {
         top: 0;
         width: 100%;

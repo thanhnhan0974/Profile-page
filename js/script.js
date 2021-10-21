@@ -1,7 +1,9 @@
 var tabletWidth = 1200;
 var mobileWidth = 560;
 
+var menuItems = $('.menu-item');
 var windowWidth = $(window).width();
+
 $(window).resize(function() {
     windowWidth = $(window).width();
 
@@ -9,21 +11,32 @@ $(window).resize(function() {
     if (windowWidth >= tabletWidth) {
         createAnimation();
     } else {
-        destroyAnimation()
+        destroyAnimation();
+
+        // Chạy đến tab đang active khi co màn hình lại
+        // menuItems.each(function(index, menuItem) {
+        //     let _menuItem = $(menuItem);
+        //     let id = _menuItem.children('a').attr('href');
+        //     let menuActive = _menuItem.hasClass('active');
+
+        //     if (menuActive) {
+        //         $('html, body').animate({
+        //             scrollTop: $(id).offset().top - 55
+        //         }, 100);
+        //     }
+        // })
     }
 })
 
-var menuItems = $('.menu-item');
 
 function createAnimation() {
     menuItems.each(function(index, menuItem) {
         let _menuItem = $(menuItem);
         let id = _menuItem.children('a').attr('href');
 
-        $(id).addClass('show');
 
         if (_menuItem.hasClass("active")) {
-            $(id).addClass('animate__fadeInLeft');
+            $(id).addClass('animate__fadeInLeft show');
         } else {
             $(id).addClass('animate__fadeOutLeft hidden');
         }
@@ -59,7 +72,6 @@ menuItems.click(function(Event) {
     current.addClass("active");
 
     if (windowWidth >= tabletWidth) {
-        console.log(windowWidth + ', ' + tabletWidth);
         $('.main').find('.section-tab').removeClass('animate__fadeInLeft');
         $('.main').find('.section-tab').addClass('animate__fadeOutLeft hidden');
 
@@ -69,7 +81,7 @@ menuItems.click(function(Event) {
         }
     } else {
         $('html, body').animate({
-            scrollTop: menuItem.offset().top - 55
+            scrollTop: menuItem.offset().top - 55,
         }, 100);
     }
 });
@@ -78,13 +90,14 @@ menuItems.click(function(Event) {
 
 // check form data
 
-$("btn-submit").click(function() {
-    $('form.form-messag form-input .form-control').each(function() {
-        let i = 0;
-        console.log(i);
-    })
-    return false;
-})
+// $(".btn-submit").click(function() {
+//     $('form.form-message .form-input .form-control').each(function() {
+//         if ($(this).val() == '') {
+//             $(this).css('borderColor', 'red')
+//             return false;
+//         }
+//     })
+// })
 
 $(document).ready(function() {
     // carousel
