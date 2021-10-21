@@ -33,6 +33,14 @@ a {
     transition: all 0.2s;
 }
 
+.input-error {
+    border-color: red;
+}
+
+.input-error::placeholder {
+    color: red;
+}
+
 .main {
     position: relative;
     height: 90vh;
@@ -314,12 +322,10 @@ a:hover {
 }
 
 .section-tab .wrapper .content .my-info ul li {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 5px;
     padding: 0 10px 17px;
     font-size: 14px;
+    text-align: right;
 }
 
 .section-tab .wrapper .content .my-info ul li span {
@@ -327,6 +333,7 @@ a:hover {
     background: var(--orange);
     border-radius: 1px;
     color: #fff;
+    float: left;
 }
 
 .section-tab__about-me--skill .skill-content {
@@ -572,12 +579,10 @@ a:hover {
 /* contact */
 
 #contact .body ul li {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 7px;
     padding: 0 10px 10px;
     font-size: 14px;
+    text-align: right;
 }
 
 #contact .body ul li span {
@@ -585,11 +590,13 @@ a:hover {
     background: var(--orange);
     border-radius: 3px;
     color: #fff;
+    float: left;
 }
 
 #contact .form-message .form-input .form-control {
     outline: 0;
     border-radius: 0;
+    border-width: 2px;
 }
 
 #contact .form-message .form-input .form-control:focus {
@@ -658,16 +665,6 @@ a:hover {
     width: 100%;
 }
 
-.lr:before {
-    content: '';
-    background: linear-gradient(to bottom, rgb(0 0 0 / 18%), transparent);
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 1px;
-}
-
 .lb:before {
     content: '';
     background: linear-gradient(to right, transparent, rgb(0 0 0 / 18%));
@@ -676,17 +673,6 @@ a:hover {
     bottom: 0;
     left: 0;
     width: 100%;
-}
-
-.lmb:before {
-    content: '';
-    background: linear-gradient(to right, transparent, rgb(0 0 0 / 18%), transparent);
-    height: 1px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
 }
 
 .ll:before {
@@ -699,24 +685,44 @@ a:hover {
     width: 1px;
 }
 
-.lmv:after {
-    content: '';
-    background: linear-gradient(to bottom, rgb(0 0 0 / 18%), transparent);
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 1px;
-}
-
-.lmh:after {
-    content: '';
-    background: linear-gradient(to right, transparent, rgb(0 0 0 / 18%), transparent);
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
+@media (min-width: 576px) {
+    .lr:before {
+        content: '';
+        background: linear-gradient(to bottom, rgb(0 0 0 / 18%), transparent);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+    }
+    .lmb:before {
+        content: '';
+        background: linear-gradient(to right, transparent, rgb(0 0 0 / 18%), transparent);
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+    }
+    .lmv:after {
+        content: '';
+        background: linear-gradient(to bottom, rgb(0 0 0 / 18%), transparent);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 1px;
+    }
+    .lmh:after {
+        content: '';
+        background: linear-gradient(to right, transparent, rgb(0 0 0 / 18%), transparent);
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+    }
 }
 
 .section-tab.show {
@@ -782,7 +788,7 @@ a:hover {
 
 @media (min-width: 561px) and (max-width: 1199px) {
     .main {
-        padding: 0 40px 0 100px;
+        padding: 0 15px 0 100px;
     }
     .main .header {
         top: 15px;

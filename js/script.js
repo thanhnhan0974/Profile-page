@@ -90,14 +90,20 @@ menuItems.click(function(Event) {
 
 // check form data
 
-// $(".btn-submit").click(function() {
-//     $('form.form-message .form-input .form-control').each(function() {
-//         if ($(this).val() == '') {
-//             $(this).css('borderColor', 'red')
-//             return false;
-//         }
-//     })
-// })
+$(".btn-submit").click(function(e) {
+    e.preventDefault();
+
+    let numOfErorrs = 0;
+    $('form.form-message .form-input .form-control').each(function() {
+        if ($(this).val() == '') {
+            $(this).addClass('input-error');
+            numOfErorrs += 1;
+        }
+    })
+    if (numOfErorrs == 0) {
+        $('form.form-message').submit();
+    }
+})
 
 $(document).ready(function() {
     // carousel
