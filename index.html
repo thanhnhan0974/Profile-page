@@ -70,7 +70,7 @@
                     </div>
                 </div>
             </div>
-            <div id="about-me" class="section-tab">
+            <div id="about-me" class="section-tab animate__animated">
                 <div class="wrapper">
                     <div class="content section-tab__about-me--info mb-5">
                         <div class="title"><span>Về</span> tôi</div>
@@ -194,7 +194,7 @@
                     </div>
                 </div>
             </div>
-            <div id="resume" class="section-tab">
+            <div id="resume" class="section-tab animate__animated">
                 <div class="wrapper">
                     <div class="content resume mb-5">
                         <div class="title">
@@ -424,7 +424,7 @@
                     </div>
                 </div>
             </div>
-            <div id="contact" class="section-tab">
+            <div id="contact" class="section-tab animate__animated">
                 <div class="wrapper">
                     <div class="content mb-5">
                         <div class="title"><span>Liên</span> lạc với tôi</div>
@@ -464,67 +464,7 @@
         <script src="vendor/bootstrap/bootstrap.js"></script>
         <script src="vendor/font-awesome/all.js"></script>
         <script src="vendor/OwlCarousel/owl.carousel.js"></script>
-        <script type="text/javascript">
-            var widthWindow = $(window).width();
-
-            if (widthWindow >= 1200) {
-                $('.menu-item').each(function(index, menuItem) {
-                    let _menuItem = $(menuItem);
-                    let id = _menuItem.children('a').attr('href');
-                    if (_menuItem.hasClass("active")) {
-                        $(id).addClass('animate__animated animate__fadeInLeft show');
-                    } else {
-                        $(id).addClass('animate__animated animate__fadeOutLeft');
-                    }
-                })
-
-                var menuItems = $('.menu-item');
-
-                menuItems.click(function(Event) {
-                    Event.preventDefault();
-
-                    let current = $(this);
-                    let id = current.children('a').attr('href');
-                    let menuItem = $(id);
-
-                    menuItems.removeClass("active");
-                    current.addClass("active");
-
-                    $('.main').find('.section-tab').removeClass('animate__animated animate__fadeInLeft show');
-                    $('.main').find('.section-tab').addClass('animate__animated animate__fadeOutLeft');
-
-                    if (current.hasClass("active")) {
-                        menuItem.removeClass('animate__animated animate__fadeOutLeft');
-                        menuItem.addClass('animate__animated animate__fadeInLeft show');
-                    }
-                });
-            }
-            // check form data
-
-            $("btn-submit").click(function(Event) {
-                $('form.form-messag form-input .form-control').each(function() {
-                    let i = 0;
-                    console.log(i);
-                })
-                return false;
-            })
-
-            $(document).ready(function() {
-                // carousel
-                $('.owl-carousel').owlCarousel({
-                    margin: 50,
-                    items: 1,
-                    dots: true,
-                });
-                // create dots
-                $('.dots-percentage').append('<div class="da"><span class="dot"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></div>').after('<span class="dg"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>')
-                $(window).on('resize', function() {
-                    $('.dot').width($('.dots-percentage').width());
-                    var widthWindow = $(window).width();
-                })
-                $('.dot').width($('.dots-percentage').width());
-            });
-        </script>
+        <script src="js/script.js"></script>
 
 </body>
 
